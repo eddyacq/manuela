@@ -191,9 +191,8 @@ a { color: inherit; text-decoration: none; }
   .rows-wrap { padding-top: 52px; }
   .row-heading h3 { font-size: 18px; }
   .row-heading button span { display: none; }
-  .memory-cards { display: flex; overflow: visible; gap: 10px; }
-  .memory-card { min-width: calc(70vw - 10px); height: 165px; }
-  .memory-card:nth-child(3) { display: none; }
+  .memory-cards { display: flex; overflow-x: auto; overflow-y: hidden; gap: 10px; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 4px; }
+  .memory-card { min-width: calc(70vw - 10px); height: 165px; scroll-snap-align: start; }
   .empty-copy { padding: 17px; }
   .quote-card p { font-size: 16px; }
   .site-footer { padding-bottom: 30px; }
