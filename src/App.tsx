@@ -329,10 +329,25 @@ function App() {
           </div>
         </section>
       </main>
-      <footer className="site-footer" id="for-manuela">
-        <div className="footer-mark">M<span>F</span></div>
-        <div><strong>Made especially for Manuela.</strong><p>Your own little corner of the universe, always on.</p></div>
-        <span className="footer-heart"><Heart size={16} fill="currentColor" /></span>
+         <footer className="site-footer" id="for-manuela">
+        <div className="footer-glow" />
+        <div className="footer-content">
+          <div className="footer-brand">
+            <span className="footer-logo">MANUELA<span>FLIX</span></span>
+            <span className="footer-tag"><Sparkles size={11} /> An Original Production</span>
+          </div>
+          <div className="footer-message">
+            <Heart size={18} fill="currentColor" className="footer-beat" />
+            <p>Made especially for Manuela — your own little corner of the universe, always on.</p>
+          </div>
+          <div className="footer-divider" />
+          <div className="footer-credits">
+            <span>Starring <strong>Manuela</strong></span>
+            <span className="footer-dot">•</span>
+            <span>Directed &amp; produced with love by <strong>Edwin</strong></span>
+          </div>
+          <div className="footer-bottom">Streaming happiness since day one</div>
+        </div>
       </footer>
     </div>
   );
